@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Materialize CSS-->
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/criacoes.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/cs.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/md.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/pexels1.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/pexels2.jpg"></a>
+    </div>
+
+    <button class="next">Próximo</button>
+
+    <!--jQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Materialize JS-->
+    <script src="/js/materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                duration:100
+            });
+
+            $('.next').click(function(){
+                $('.carousel').carousel('next')
+            })
+        });
+    </script>
+
+</body>
+
+</html>
